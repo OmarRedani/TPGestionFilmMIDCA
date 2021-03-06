@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TPGestionFilmMICDA</string>
+    <string name="liste_des_films">Liste des Films</string>
+    <string name="ajouter_film">Ajouter Film</string>
+    <string name="annuler">Annuler</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="taper_le_titre">Taper le titre</string>
+    <string name="titre">Titre</string>
+    <string name="realisteur">Realisteur</string>
+    <string name="date">Date</string>
+    <string name="modifier">Modifier</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="code">Code</string>
+    <string name="chercher">Chercher</string>
+</resources>

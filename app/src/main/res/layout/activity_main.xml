@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/cont1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/col1"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/liste_des_films"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"/>
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_home_button"
+            android:layout_margin="5dp"
+            android:onClick="methodeSortir"/>
+        <ImageButton
+            android:id="@+id/btnRecherche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_search_button"
+            android:layout_margin="5dp"
+            android:onClick="methodeVersConsulterActivity"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/cont2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/col1"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/btnAjouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/plus"
+            android:layout_margin="5dp"
+            android:onClick="methodeVersAjouterActivity"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cont2"
+        android:layout_below="@id/cont1"
+        android:layout_margin="5dp">
+        <ListView
+            android:id="@+id/listeFilms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:divider="@color/colorAccent"
+            android:dividerHeight="5dp"
+            android:background="@drawable/border"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
